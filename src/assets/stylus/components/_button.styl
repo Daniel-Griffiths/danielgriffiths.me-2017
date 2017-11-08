@@ -1,0 +1,50 @@
+.btn
+    color #fff
+    cursor pointer
+    margin-top 1em
+    font-size 0.9em
+    user-select none
+    text-align center
+    border-radius 2px
+    padding .6em 1.5em
+    display inline-block
+    text-decoration none
+    transition  0.3s ease-in-out
+    
+    &--primary
+      color $btn-primary-color
+      border 1px solid $btn-primary-color
+      &:hover
+        background $btn-primary-color
+        color #fff
+      
+    &--success
+      color #5cb85c
+      border 1px solid #5cb85c
+      &:hover
+        background #5cb85c
+        color #fff
+      
+    &--info
+      color #5bc0de
+      border 1px solid #5bc0de
+      &:hover
+        background #5bc0de
+        color #fff
+      
+    &--warning
+      color #f0ad4e
+      border 1px solid #f0ad4e
+      &:hover
+        background #f0ad4e
+        color #fff
+      
+    &--danger
+      color #d9534f
+      border 1px solid #d9534f
+      &:hover
+        background #d9534f
+        color #fff
+    
+    &:hover
+      background opacity 0.7

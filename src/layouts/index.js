@@ -2,8 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-
+import Normalize from 'normalize.css';
 import './../assets/stylus/app.styl'
+
 
 const Header = () => (
   <header>
@@ -40,10 +41,22 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div className="hero"></div>
-    <div>
-      {children()}
+    <div className="hero">
+      <div className="container">
+        <div id="particles"></div>
+        <h1 className="hero__title">A professional<br/>web developer</h1>
+      </div>
     </div>
+    <main className="main">
+      <section>
+        <div className="container">
+          {children()}
+        </div>
+      </section>
+    </main>
+    <footer className="footer"> 
+      <div className="container">Hey, you made it to the footer! Congrats.</div>
+    </footer>    
   </div>
 )
 

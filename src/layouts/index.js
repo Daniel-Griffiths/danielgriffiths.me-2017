@@ -39,6 +39,10 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
+      link={[
+        { href: 'https://fonts.googleapis.com/css?family=Roboto', rel: 'stylesheet' },
+        { href: 'https://fonts.googleapis.com/css?family=Lato:100,400', rel: 'stylesheet' },
+      ]}
     />
     <Header />
     <div className="hero">

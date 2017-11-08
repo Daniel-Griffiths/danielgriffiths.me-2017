@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Normalize from 'normalize.css';
+import Favicon from './../assets/img/favicon.ico'
 import './../assets/stylus/app.styl'
 
 
@@ -40,8 +41,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
       link={[
-        { href: 'https://fonts.googleapis.com/css?family=Roboto', rel: 'stylesheet' },
-        { href: 'https://fonts.googleapis.com/css?family=Lato:100,400', rel: 'stylesheet' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
+        { rel: 'icon', href: Favicon },
       ]}
     />
     <Header />

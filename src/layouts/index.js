@@ -7,13 +7,24 @@ import './../assets/stylus/app.styl'
 
 const Header = () => (
   <header>
-    <nav>
-      <ul>
-        <li><Link to="/">Example</Link></li>
-        <li><Link to="/">Example</Link></li>
-        <li><Link to="/">Example</Link></li>
-        <li><Link to="/">Example</Link></li>
-        <li><Link to="/">Example</Link></li>
+    <nav className="nav">
+      <ul className="container nav__inner">
+        <li className="nav__item logo">D</li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">Home</Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">Projects</Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">Games</Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">Music</Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">Contact</Link>
+        </li>        
       </ul>
     </nav>
   </header>
@@ -29,6 +40,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <div className="hero"></div>
     <div>
       {children()}
     </div>
